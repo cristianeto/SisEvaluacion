@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inicio|Profesor</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <!-- bootstrap -->
+    <link href="../../css/bootstrap.css" rel="stylesheet" />
+    <link href="../../css/bootstrap-overrides.css" type="text/css" rel="stylesheet" />
+   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- theme -->
+    <link rel="stylesheet" type="text/css" href="../../css/theme/default.css" />
+
+    <!-- libraries -->
+    <link rel="stylesheet" type="text/css" href="../../css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/elements/dashboard.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/elements/notify.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/elements/bootstrap_calendar.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/elements/pizza.css" />
+
+
+
+    <!-- open sans font -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css' />
+
+    <!--[if lt IE 9]>
+      <script src="js/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+    <!-- navbar -->
+    <header class="navbar navbar-inverse navbar-fixed-top" role="banner">
+        <div class="navbar-header">
+            <!--LOGO SAAss-->
+            <div class="navbar-collapse collapse">
+                <form class="navbar-form navbar-right" role="form">
+                <a  class=" btn btn-link" onclick="location.href='index.html'">
+                    <h4><i class="fa fa-file-text-o"></i> <strong>SAA</strong>ss (<strong>Smart</strong> Academics <strong>Assessments</strong>)</h4>
+                </a>
+                </form>
+            </div>
+            <!--/LOGO SAAss-->
+          
+           
+        </div>
+
+        <ul class="nav navbar-nav pull-right hidden-xs">
+            <li class="hidden-xs">
+                <!--<div class="input-group input-group-sm"  >
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+                <input id="correo" type="text" class="form-control input-lg" placeholder="Buscar">
+                </div>-->
+            </li>
+            <li class="notification-dropdown hidden-xs">
+                <a href="#" class="trigger">
+                    <i class="glyphicon glyphicon-bell"></i>
+                    <span class="count">5</span>
+                </a>
+                <div class="pop-dialog">
+                    <div class="pointer right">
+                        <div class="arrow"></div>
+                        
+                        <div class="arrow_border"></div>
+                        
+                    </div>
+                    <div class="body">
+                        <a href="#" class="close-icon"><i class="glyphicon glyphicon-remove-circle"></i></a>
+                        <div class="notifications">
+                            <h3>You have 5 new notifications</h3>
+                            <a href="#" class="item">
+                                <i class="fa fa-bug"></i> Server Error Reports
+                                <span class="time"><i class="fa fa-clock-o"></i> 13 min.</span>
+                            </a>
+                            <a href="#" class="item">
+                                <i class="fa fa-cloud-download"></i> Backup Completed
+                                <span class="time"><i class="fa fa-clock-o"></i> 18 min.</span>
+                            </a>
+                            <a href="#" class="item">
+                                <i class="fa fa-cogs"></i> <strong>System Updated</strong>
+                                <span class="time"><i class="fa fa-clock-o"></i> 20 min.</span>
+                            </a>
+                            <a href="#" class="item">
+                                <i class="fa fa-code"></i> Code Error on Line 101
+                                <span class="time"><i class="fa fa-clock-o"></i> 49 min.</span>
+                            </a>
+                            <a href="#" class="item">
+                                <i class="fa fa-refresh fa-spin"></i> Spinner Icon
+                                <span class="time"><i class="fa fa-clock-o"></i> 1 day.</span>
+                            </a>
+                            <div class="footer">
+                                <a href="#" class="logout">View all notifications</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="notification-dropdown hidden-xs">
+                <a href="#" class="trigger">
+                    <i class="fa fa-envelope"></i>
+                </a>
+                <div class="pop-dialog">
+                    <div class="pointer right">
+                        <div class="arrow"></div>
+                        <div class="arrow_border"></div>
+                    </div>
+                    <div class="body">
+                        <a href="#" class="close-icon"><i class="glyphicon glyphicon-remove-circle"></i></a>
+                        <div class="messages">
+                            <a href="#" class="item">
+                                <img src="images/user_2.png" class="display" alt="user" />
+                                <div class="name">Jhane Doe</div>
+                                <div class="msg">
+                                Quisque commodo massa sed ipsum porttitor facilisis.
+                                </div>
+                                <span class="time"><i class="fa fa-clock-o"></i> 5 sec.</span>
+                            </a>
+                            <a href="#" class="item">
+                                <img src="images/user_3.png" class="display" alt="user" />
+                                <div class="name">Jack Daniel</div>
+                                <div class="msg">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                                <span class="time"><i class="fa fa-clock-o"></i> 37 mins.</span>
+                            </a>
+                            <a href="#" class="item last">
+                                <img src="images/user_4.png" class="display" alt="user" />
+                                <div class="name">Warm Sleepy</div>
+                                <div class="msg">
+                                Hello, how are you? i just though you were here, i'll see you tomorrow.
+                                </div>
+                                <span class="time"><i class="fa fa-clock-o"></i> 2 days.</span>
+                            </a>
+                            <div class="footer">
+                                <a href="#" class="logout">View all messages</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown"> 
+                <img class="img-circle" src="../../img/st.jpg" alt="avatar"> Leonardo Pérez <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Mi cuenta</a></li>
+                        <li><a href="#">Configuraciones</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Cerrar sesión</a></li>
+                    </ul>
+            </li>
+        </ul>
+    </header>
+    <!-- end navbar -->
+
+    <!-- sidebar -->
+    <div id="sidebar-nav">
+        <div class="profile-hidder">
+        <ul class="nav">
+                    <li class="nav-profile">
+                        <div class="image">
+                            <a href="javascript:;"><img src="images/user_1.jpg" alt=""></a>
+                        </div>
+                        <div class="info">
+                            <a href="profile.html">Erwin Agpasa <b class="caret"></b></a>
+                            <small>UX-UI Designer</small>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+         <ul id="dashboard-menu">
+             <br>
+             
+             <li class="active">
+                <div class="pointer">
+                    <div class="arrow"></div>
+                    <div class="arrow_border"></div>
+                </div>
+                 <a href="p_default.html">
+                    <i class="fa fa-home"></i>
+                    <span>Inicio</span>
+                </a>
+            </li>
+            
+             <li>
+                <div>
+                    <div class="arrow"></div>
+                    <div class="arrow_border"></div>
+                </div>
+                <a class="dropdown-toggle" href="#">              
+                    <i class="fa fa-table"></i>
+                    <span>Actividades</span> <b class="caret"></b>
+                </a>
+                 <ul class="submenu">
+                    <li><a href="p_materia.html">Materia AAA</a></li>
+                    <li><a href="#">Materia BBB</a></li>
+                    <li><a href="#">Materia CCC</a></li>
+                    
+                </ul>
+            </li>
+            
+            <li>
+                <div>
+                    <div class="arrow"></div>
+                    <div class="arrow_border"></div>
+                </div>
+                <a href="#">
+                    <i class="fa fa-group"></i>
+                    <span>Contactos</span>
+                </a>
+            </li> 
+            
+            
+            
+            
+            <li>
+                <a href="#">
+                    <i class="fa fa-briefcase"></i>
+                    
+                    <span>Acerca de</span> 
+                    <!--NUMERO DE MENSAJES
+                    <span class="badge pull-right label-success">42</span>
+                    /NUMERO DE MENSAJES-->
+                </a>
+            </li>
+
+           
+        </ul>
+    </div>
+    <!-- end sidebar -->
+
+    <!--CARGAR MODAL PREGUNTA-->
+    <div class="col-md-12 modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true" >
+  <div class="modal-lg">
+  <div class="modal-content">
+      <div class=" modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 class="text-center">Detalles de la Pregunta</h3>
+      </div>
+      <div class="modal-body">
+          <form class="form-horizontal">
+              <label class="col-lg-3 control-label"> Descripción </label>
+                <div class="form-group">
+                    <div class="col-md-11">
+                        
+                        <textarea class="textarea coform-control" placeholder="Ingrese la pregunta" style="width: 100%; height: 70px;"></textarea>
+                    
+                    </div>
+                </div>
+              <label class="col-lg-2 control-label"> Puntaje </label>
+              <div class="clearfix"></div>
+              <div class="form-group">
+                    <div class="col-md-3">
+                        <input type="text" name="puntaje" class="bg-focus form-control" placeholder="" value="1" />
+                    </div>
+                </div>  
+              <hr>
+                <label class="col-lg-1 control-label"> Respuestas </label>  
+                <div class="form-group">
+                    
+                    <div class="col-md-11">
+                        <input type="text" name="r1" class="bg-focus form-control" placeholder="Ingrese la respuesta 1 (correcta)" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    
+                    <div class="col-md-11">
+                        <input type="text" name="r2" class="bg-focus form-control" placeholder="Ingrese la respuesta 2 (incorrecta)" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    
+                    <div class="col-md-11">
+                        <input type="text" name="r3" class="bg-focus form-control" placeholder="Ingrese la respuesta 3 (incorrecta)" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    
+                    <div class="col-md-11">
+                        <input type="text" name="r4" class="bg-focus form-control" placeholder="Ingrese la respuesta 4 (incorrecta)" />
+                    </div>
+                </div>  
+                
+                    
+                    
+                    <div class="table-responsive">
+                    </div>  
+                    
+                  
+                    
+            
+      </div>
+      <div class="modal-footer">
+          <div class="form-horizontal ">
+              <input type="submit" class="btn btn-default" data-dismiss="modal" aria-hidden="true" value="Cancelar" />
+              <input type="submit" class="btn btn-info" data-dismiss="modal" aria-hidden="true" value="Guardar" />
+                
+		  </div>	
+      </div>
+      </form>
+  </div>
+  </div>
+</div>
+    <!--/CARGAR MODAL PREGUNTA--> 
+    
+    
+
+    <!-- main container -->
+    <div class="content">
+        <div id="pad-wrapper">
+             <h4 class=""><strong>Bienvenidos</strong> al <strong>S</strong>istema <strong>I</strong>nteligente para <strong>E</strong>valuaciones e <strong>I</strong>nteracciones en <strong>C</strong>lase, <strong>SAA</strong>ss </h4>
+            
+
+
+            <!-- FOTO PORTADA -->
+             <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-body no-padding">
+
+                    <div class="panel-body">
+                        <img class="text-center" src="../../img/portada.jpg"/>
+                  
+                    </div>
+
+                
+
+
+                </div>
+            </div>
+            </div>
+            <!-- /FOTO PORTADA -->
+
+            <!-- MISION -->
+             <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading"><strong>Misión</strong></div>
+                <div class="panel-body no-padding">
+
+                    <div class="panel-body">
+                   <p class="text-justify">
+                       Contar con una solución que facilite la interacción entre
+            profesores y alumnos en el ámbito de actuación en clases,
+            evaluaciones y encuestas, utilizando medios digitales que 
+            potencialicen el sistema de enseñanza.
+                   </p>
+                   <p class="text-justify">
+                       Contar con una solución que facilite la interacción entre
+            profesores y alumnos en el ámbito de actuación en clases,
+            evaluaciones y encuestas, utilizando medios digitales que 
+            potencialicen el sistema de enseñanza.
+            
+            </p>
+            <p class="text-right">
+            Correo electrónico: informacion@saass.com
+            </p>
+                    </div>
+
+                
+
+
+                </div>
+            </div>
+            </div>
+            <!-- /MISION -->
+            
+            
+            <!-- VISION -->
+             <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading"><strong>Visión</strong></div>
+                <div class="panel-body no-padding">
+
+                    <div class="panel-body">
+                   <p class="text-justify">
+                       Contar con una solución que facilite la interacción entre
+            profesores y alumnos en el ámbito de actuación en clases,
+            evaluaciones y encuestas, utilizando medios digitales que 
+            potencialicen el sistema de enseñanza.
+                   </p>
+                   <p class="text-justify">
+                       Contar con una solución que facilite la interacción entre
+            profesores y alumnos en el ámbito de actuación en clases,
+            evaluaciones y encuestas, utilizando medios digitales que 
+            potencialicen el sistema de enseñanza.
+            
+            </p>
+            <p class="text-right">
+            Correo electrónico: informacion@saass.com
+            </p>
+                    </div>
+
+                
+
+
+                </div>
+            </div>
+            </div>
+            <!-- /VISION -->
+
+            <!-- ESTUDIANTE -->
+            <div class="col-md-6">
+            <div class="panel panel-default post-wrap pro-box">
+                <div class="post-info">
+                    <span class="arrow-pro right"></span>
+                                  <div class="panel-body">
+                                      <h2>Estudiante de la semana</h2>
+                                      <div class="desk based">
+                                          <h3>Leonardo Pérez</h3>
+                                          <p>Estudiante de la Facultad de Informática y Eléctronica
+                                              de la Escuela de Ingeniería en Sistemas Informáticos
+                                          </p>
+                                      </div>
+                                      <div class="post-btn">
+                                          <a href="javascript:;">
+                                              <i class="fa fa-chevron-circle-left"></i>
+                                          </a>
+                                          <a href="javascript:;">
+                                              <i class="fa fa-chevron-circle-right"></i>
+                                          </a>
+                                      </div>
+                                  </div>
+                              </div>
+                          
+                          <aside class="post-highlight">
+                              <div class="panel-body text-center">
+                                  <div class="pro-box">
+                                      <img src="../../img/st.jpg" alt="">
+                                  </div>
+                              </div>
+                          </aside>
+            </div>
+            </div>
+            <!-- /ESTUDIANTE -->
+         
+            
+            
+            
+            <div class="clearfix"></div>
+             <footer id="footer"> 
+                <div class="text-center clearfix">
+                    <p><small>&copy myxdashboard 2014, Admin dashboard framework base on bootstrap</small>
+                        <br /><br /> 
+                        <a href="#" class="btn btn-xs btn-circle btn-twitter"><i class="fa fa-twitter"></i></a> 
+                        <a href="#" class="btn btn-xs btn-circle btn-facebook"><i class="fa fa-facebook"></i></a> 
+                        <a href="#" class="btn btn-xs btn-circle btn-gplus"><i class="fa fa-google-plus"></i></a> 
+                        <a href="#" class="btn btn-xs btn-circle btn-skype"><i class="fa faside-skype"></i></a> 
+                        
+                    </p> 
+                </div> 
+            </footer>
+
+
+          </div><!-- /pad-wrapper -->
+    </div><!-- content --> 
+    <!-- /main container -->
+
+
+
+
+            <!--post modal-->
+            <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                           <h4><strong>Delete Confirmation</strong></h4>
+                        </div>
+                    
+                        <div class="modal-body"><p></p></div>
+                       
+                        <div class="modal-footer">
+                            <button class="btn btn-default btn-sm" data-dismiss="modal" aria-hidden="true">Close</button>
+                            <button data-dismiss="modal" class="btn btn-danger btn-sm" id="btnYes">Confirm</button> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Notification -->
+            <div id="container">        
+                <div id="default">
+                    <h1>#{title}</h1>
+                    <p>#{text}</p>
+                </div>
+            </div> 
+
+
+
+    <!-- scripts -->
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/bootstrap.js"></script>
+    <script src="../../js/theme.js"></script>
+
+    <script src="../../js/dashboard/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="../../js/dashboard/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="../../js/dashboard/jquery.sparkline.min.js"></script>
+
+    <script src="../../js/dashboard/waypoints.min.js"></script>
+    <script src="../../js/dashboard/jquery.counterup.min.js"></script>
+    <script src="../../js/bootstrap-modal.js"></script>
+    
+    <script src="../../js/flot/jquery.flot.js"></script>
+    <script src="../../js/flot/jquery.flot.resize.js"></script>
+
+    <!-- Upload file drag and drop -->
+    <script src="../../js/filedrag/filedrag.js"></script>
+    <script src="../../js/bootstrap.file-input.js"></script>
+
+    <!-- notification -->
+    <script src="../../js/notify/jquery-ui.js"></script>
+    <script src="../../js/notify/jquery.notify.js"></script>
+    <script src="../../js/jquery.slimscroll.js"></script>
+    <script src="../../js/bootstrap_calendar.js"></script>
+
+
+    <script src="../../js/pizza/snap.svg.js"></script>
+    <script src="../../js/pizza/pizza.js"></script>
+
+    <script type="text/javascript">
+        //Pizza
+        $(window).load(function() {
+      Pizza.init();
+    })
+
+
+    //Calendar test
+    $(document).ready( function(){
+    theMonths = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+    theDays = ["Dom", "Lun", "Mar", "Mié", "Jue", "Vie", "Sab"];
+
+    $('#calendar_test').calendar({
+        months: theMonths,
+        days: theDays,
+        req_ajax: {
+            type: 'get',
+            url: 'json.php'
+        }
+    });
+});
+
+
+
+    //calling bootstrap fili input
+    $('input[type=file]').bootstrapFileInput();
+    $('.file-inputs').bootstrapFileInput();
+  
+    //slimscrool
+    $(function(){
+    $('#slimscrool').slimScroll({
+        height: '250px'
+    });
+    });
+
+
+     //LIVE FLOT
+    $(function() {
+        var data = [],
+            totalPoints = 400;
+
+        function getRandomData() {
+
+            if (data.length > 0)
+                data = data.slice(1);
+
+            while (data.length < totalPoints) {
+
+                var prev = data.length > 0 ? data[data.length - 1] : 50,
+                    y = prev + Math.random() * 10 - 5;
+
+                if (y < 0) {
+                    y = 0;
+                } else if (y > 100) {
+                    y = 100;
+                }
+
+                data.push(y);
+            }
+
+            var res = [];
+            for (var i = 0; i < data.length; ++i) {
+                res.push([i, data[i]])
+            }
+
+            return res;
+        }
+
+        // Set up the control widget
+        var updateInterval = 40;
+        $("#updateInterval").val(updateInterval).change(function () {
+            var v = $(this).val();
+            if (v && !isNaN(+v)) {
+                updateInterval = +v;
+                if (updateInterval < 1) {
+                    updateInterval = 1;
+                } else if (updateInterval > 2000) {
+                    updateInterval = 2000;
+                }
+                $(this).val("" + updateInterval);
+            }
+        });
+
+        var plot = $.plot("#placeholder", [ getRandomData() ], {
+            series: {
+                shadowSize: 0   // Drawing is faster without shadows
+            },
+            yaxis: {
+                min: 0,
+                max: 200
+            },
+            xaxis: {
+                show: true
+            }
+        });
+
+        function update() {
+
+            plot.setData([getRandomData()]);
+            plot.draw();
+            setTimeout(update, updateInterval);
+        }
+
+        update();
+        
+    });
+
+
+
+
+
+       //jvectormap data
+    var visitorsData = {
+        "US": 398, //USA
+        "SA": 400, //Saudi Arabia
+        "CA": 1000, //Canada
+        "DE": 500, //Germany
+        "FR": 760, //France
+        "CN": 300, //China
+        "AU": 700, //Australia
+        "BR": 600, //Brazil
+        "IN": 800, //India
+        "GB": 320, //Great Britain
+        "RU": 3000, //Russia
+        "PH": 1200 //Russia
+
+    };
+    $(function(){
+     //World map by jvectormap
+    $('#world-map').vectorMap({
+        map: 'world_mill_en',
+        backgroundColor: "#fff",
+        regionStyle: {
+            initial: {
+                fill: '#e4e4e4',
+                "fill-opacity": 1,
+                stroke: 'none',
+                "stroke-width": 0,
+                "stroke-opacity": 1
+            }
+        },
+        series: {
+            regions: [{
+                    values: visitorsData,
+                    scale: ["#a9b2c0", "#344154"], //['#3E5E6B', '#A6BAC2'],
+                    normalizeFunction: 'polynomial'
+                }]
+        },
+        onRegionLabelShow: function(e, el, code) {
+            if (typeof visitorsData[code] != "undefined")
+                el.html(el.html() + ': ' + visitorsData[code] + ' new visitors');
+        }
+    });
+    });
+
+
+
+
+ //Sparkline charts
+    var myvalues = [15, 19, 20, -22, -33, 27, 31, 27, 19, 30, 21];
+    $('#sparkline-1').sparkline(myvalues, {
+        type: 'bar',
+        barColor: '#43aea8',
+        negBarColor: "#ddd",
+        height: '20px'
+    });
+    myvalues = [15, 19, 20, 22, -2, -10, -7, 27, 19, 30, 21];
+    $('#sparkline-2').sparkline(myvalues, {
+        type: 'bar',
+        barColor: '#43aea8',
+        negBarColor: "#ddd",
+        height: '20px'
+    });
+    myvalues = [15, -19, -20, 22, 33, 27, 31, 27, 19, 30, 21];
+    $('#sparkline-3').sparkline(myvalues, {
+        type: 'bar',
+        barColor: '#43aea8',
+        negBarColor: "#ddd",
+        height: '20px'
+    });
+    myvalues = [15, 19, 20, 22, 33, -27, -31, 27, 19, 30, 21];
+    $('#sparkline-4').sparkline(myvalues, {
+        type: 'bar',
+        barColor: '#43aea8',
+        negBarColor: "#ddd",
+        height: '20px'
+    });
+    myvalues = [15, 19, 20, 22, 33, 27, 31, -27, -19, 30, 21];
+    $('#sparkline-5').sparkline(myvalues, {
+        type: 'bar',
+        barColor: '#43aea8',
+        negBarColor: "#ddd",
+        height: '20px'
+    });
+    myvalues = [15, 19, -20, 22, -13, 27, 31, 27, 19, 30, 21];
+    $('#sparkline-6').sparkline(myvalues, {
+        type: 'bar',
+        barColor: '#43aea8',
+        negBarColor: "#ddd",
+        height: '20px'
+    });
+
+    myvalues = [15, 19, 20, 22, -13, 27, 31, 27, -19, 30, -21];
+    $('#sparkline-7').sparkline(myvalues, {
+        type: 'bar',
+        barColor: '#43aea8',
+        negBarColor: "#ddd",
+        height: '20px'
+    });
+
+    myvalues = [45, 9, 50, 22, 13, 27, 31, -7, 19, 30, 21];
+    $('#sparkline-8').sparkline(myvalues, {
+        type: 'bar',
+        barColor: '#43aea8',
+        negBarColor: "#ddd",
+        height: '20px'
+    });
+
+
+
+
+   //COUNTER UP
+       jQuery(document).ready(function( $ ) {
+        $('.counter').counterUp({
+            delay: 10,
+            time: 3000
+        });
+    });
+
+
+
+
+
+    //DATA GRID
+    $('#myModal').on('show', function() {
+    var tit = $('.confirm-delete').data('title');
+
+    //$('#myModal .modal-body p').html("Are you sure you want to delete this order " + '<b>' + tit +'</b>' + ' ?');
+    $('#myModal .modal-body p').html("Are you sure you want to delete this order?");
+    var id = $(this).data('id'),
+    removeBtn = $(this).find('.danger');
+    })
+
+    $('.confirm-delete').on('click', function(e) {
+    e.preventDefault();
+
+    var id = $(this).data('id');
+    $('#myModal').data('id', id).modal('show');
+    });
+
+    $('#btnYes').click(function() {
+    // handle deletion here
+    var id = $('#myModal').data('id');
+    $('[data-id='+id+']').parents('tr').remove();
+    $('#myModal').modal('hide');
+    
+    });
+
+
+
+    //NOTIFICATION
+    function create( template, vars, opts ){
+    return $container.notify("create", template, vars, opts);
+    }
+
+    $(function(){
+    // initialize widget on a container, passing in all the defaults.
+    // the defaults will apply to any notification created within this
+    // container, but can be overwritten on notification-by-notification
+    // basis.
+    $container = $("#container").notify();
+    // create two when the pg loads
+    create("default", { title:'YOU HAVE 3 NEW MESSAGES', text:'Go to <a href=\'inbox.html\'>Mailbox</a> to see who wrote to you. Check the date and today\'s tasks.'});
+  });
+
+
+    //Google Analytics
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-52249171-1', 'myxvip.com');
+      ga('send', 'pageview');
+        </script>
+
+</body>
+</html>
